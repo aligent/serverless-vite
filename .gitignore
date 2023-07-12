@@ -4,11 +4,8 @@
 node_modules
 jspm_packages
 
-# Serverless directories
-.serverless
-
-# ESBuild directories
-.build
+# Build directory
+dist
 
 # VSCode directory
 .vscode

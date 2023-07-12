@@ -2,8 +2,12 @@
   "name": "@aligent/serverless-vite",
   "version": "0.0.1",
   "description": "A Serverless framework plugin for Vite project bundling",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "prepublishOnly": "npm run build",
+    "prebuild": "npm run clean",
+    "build": "tsc -p ./tsconfig.build.json",
+    "clean": "rm -rf ./dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write .",
