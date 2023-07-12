@@ -1,0 +1,45 @@
+{
+  "name": "@aligent/serverless-vite",
+  "version": "0.0.1",
+  "description": "A Serverless framework plugin for Vite project bundling",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write .",
+    "check-types": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aligent/serverless-vite.git"
+  },
+  "keywords": [
+    "serverless",
+    "serverless plugin",
+    "plugin",
+    "vite",
+    "aws",
+    "bundler",
+    "minifier",
+    "typescript",
+    "react"
+  ],
+  "author": "Aligent Consulting",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aligent/serverless-vite/issues"
+  },
+  "homepage": "https://github.com/aligent/serverless-vite#readme",
+  "devDependencies": {
+    "@types/serverless": "^3.12.13",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.1.6"
+  },
+  "peerDependencies": {
+    "vite": "^4.2.0"
+  }
+}
